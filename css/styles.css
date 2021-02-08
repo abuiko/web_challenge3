@@ -26,11 +26,14 @@ ul {
 
 a {
   text-decoration: none;
+  font-size: 1rem;
 }
 
 .container {
   margin: auto;
   max-width: 1220px;
+  padding-left: 1.3125rem;
+  padding-right: 1.3125rem;
 }
 
 .flex {
@@ -72,5 +75,113 @@ a {
   .hide-for-desktop {
     display: none;
   }
+}
+
+.header {
+  padding-top: 2.3125rem;
+  padding-bottom: 1.0625rem;
+}
+
+.header__logo {
+  -webkit-box-flex: 0.7;
+      -ms-flex: 0.7;
+          flex: 0.7;
+}
+
+.header__logo img {
+  margin-top: 9px;
+}
+
+@media (min-width: 64em) {
+  .header__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+.header__links li {
+  margin-right: 1.8125rem;
+}
+
+.header__links a {
+  color: #bfbfbf;
+  font-weight: 700;
+  -webkit-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
+}
+
+.header__links a:hover {
+  color: #232127;
+}
+
+@media (min-width: 64em) {
+  .header__login {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+  }
+}
+
+.header__login li:first-child {
+  margin-right: 1.875rem;
+}
+
+.header__login a {
+  color: #bfbfbf;
+  font-weight: 700;
+  -webkit-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
+}
+
+.header__login a:hover {
+  color: #232127;
+}
+
+.header__toggle .line {
+  width: 27px;
+  height: 3px;
+  background: #bfbfbf;
+  cursor: pointer;
+}
+
+.header__toggle .line:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.header__button {
+  display: block;
+  padding: 1rem 1.5625rem;
+  background: #2acfcf;
+  border-radius: 30px;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.header__button:hover {
+  opacity: 0.75;
+}
+
+.header__button a {
+  color: white;
+}
+
+.header__button a:hover {
+  color: white;
 }
 /*# sourceMappingURL=styles.css.map */

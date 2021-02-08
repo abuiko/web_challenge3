@@ -20,12 +20,21 @@
 </head>
 
 <body>
-  <header>
-    <nav class="header">
+  <header class="container">
+    <nav class="header flex flex-jc-sb flex-ai-c">
       <div class="header__logo">
         <img src="/images/logo.svg" alt="shortly logo">
       </div>
-      <div class="header__toggle">
+      <ul class="header__links hide-for-mobile">
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Resources</a></li>
+      </ul>
+      <ul class="header__login hide-for-mobile">
+       <li><a href="#">Login</a></li> 
+        <li  class="header__button"><a href="#"">Sign Up</a></li>
+      </ul>
+      <div class="header__toggle hide-for-desktop">
         <div class="line line1"></div>
         <div class="line line2"></div>
         <div class="line line3"></div>
