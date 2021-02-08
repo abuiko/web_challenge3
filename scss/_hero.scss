@@ -1,0 +1,119 @@
+.hero {
+    overflow: hidden;
+    padding-bottom: 2.5rem;
+    position: relative;
+
+
+    @include breakpoints-up(large) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__image {
+
+        // position: relative;
+        width: 550px;
+        padding-left: 1.125rem;
+
+        img {
+            width: 100%;
+
+            @include breakpoints-up(large) {
+                width: 150%;
+            }
+        }
+
+        @include breakpoints-up(medium) {
+            margin: auto;
+            padding: 0;
+        }
+
+        @include breakpoints-up(large) {
+            order: 2;
+            width: 700px;
+        }
+
+
+    }
+
+
+
+    &__text {
+
+
+        h1,
+        p {
+            text-align: center;
+
+            @include breakpoints-up(large) {
+                text-align: left
+            }
+        }
+
+
+        h1 {
+            font-size: 2.75rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: $veryDarkViolet;
+
+            @include breakpoints-up(large) {
+                font-size: 3.75rem;
+            }
+        }
+
+        p {
+            font-size: 1.05rem;
+            color: $gray;
+            line-height: 1.7;
+            margin-bottom: 2.3125rem;
+
+            @include breakpoints-up(large) {
+                width: 80%;
+            }
+
+        }
+
+        @include breakpoints-up(medium) {
+            max-width: 560px;
+            margin: auto;
+        }
+
+        @include breakpoints-up(large) {
+            order: 1;
+
+
+        }
+    }
+
+    &__button {
+        display: block;
+        padding: 1rem 1.5625rem;
+        background: $cyan;
+        border-radius: 30px;
+        text-align: center;
+        width: 50%;
+        margin: auto;
+        transition: all 300ms ease-in-out;
+
+        &:hover {
+            opacity: 0.75;
+        }
+
+        a {
+            color: white;
+            font-weight: 700;
+
+            &:hover {
+                color: white;
+            }
+        }
+
+        @include breakpoints-up(large) {
+            margin: 0;
+            width: 40%;
+        }
+
+    }
+}
