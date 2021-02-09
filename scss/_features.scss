@@ -1,22 +1,50 @@
 #features {
     background: rgb(235, 235, 235);
+    position: relative;
 }
 
+// .green-line {
+//     height: 770px;
+//     width: 9px;
+//     background: $cyan;
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     z-index: 2;
+
+// }
 
 .features {
+    z-index: 20;
     padding: 2.6875rem 1.5rem;
+
+    @include breakpoints-up(large) {
+        padding-bottom: 4.125rem;
+    }
 
     &__head {
         text-align: center;
 
+        @include breakpoints-up(large) {
+            width: 50%;
+            margin: auto;
+        }
+
         h2,
         p {
             color: $darkViolet;
+
+
         }
 
         h2 {
             margin-bottom: 1.75rem;
             font-size: 1.875rem;
+
+            @include breakpoints-up(large) {
+                font-size: 2.5875rem;
+            }
         }
 
         p {
@@ -25,22 +53,49 @@
         }
     }
 
-    &__grid {}
+    &__grid {
+        @include breakpoints-up(large) {
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            max-width: 1200px;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+    }
 
     &__card {
-        margin-top: 4rem;
+
+        margin-top: 2rem;
         background: repeating-linear-gradient(rgb(235, 235, 235), rgb(235, 235, 235) 20.9%, white 21.1%, white 100%);
         padding: 2.0625rem;
         border-radius: 10px;
+
+        @include breakpoints-up(large) {
+            margin-right: 1.9375rem;
+        }
+
     }
 
     &__icon {
         margin: auto;
-        width: 80px;
+        width: 100px;
+        height: 100px;
         border-radius: 50%;
         padding: 1rem;
         text-align: center;
         background: $darkViolet;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include breakpoints-up(large) {
+            margin: 0;
+        }
+
+        img {
+            width: 50px;
+        }
 
 
 
