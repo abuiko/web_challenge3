@@ -400,4 +400,62 @@ a {
     margin-left: 10px;
   }
 }
+
+#features {
+  background: #ebebeb;
+}
+
+.features {
+  padding: 2.6875rem 1.5rem;
+}
+
+.features__head {
+  text-align: center;
+}
+
+.features__head h2,
+.features__head p {
+  color: #3b3054;
+}
+
+.features__head h2 {
+  margin-bottom: 1.75rem;
+  font-size: 1.875rem;
+}
+
+.features__head p {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.features__card {
+  margin-top: 4rem;
+  background: repeating-linear-gradient(#ebebeb, #ebebeb 20.9%, white 21.1%, white 100%);
+  padding: 2.0625rem;
+  border-radius: 10px;
+}
+
+.features__icon {
+  margin: auto;
+  width: 80px;
+  border-radius: 50%;
+  padding: 1rem;
+  text-align: center;
+  background: #3b3054;
+}
+
+.features__text {
+  text-align: center;
+  margin-top: 2.4375rem;
+}
+
+.features__text h3 {
+  color: #3b3054;
+}
+
+.features__text p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #bfbfbf;
+}
 /*# sourceMappingURL=styles.css.map */

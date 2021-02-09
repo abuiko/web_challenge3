@@ -1,0 +1,63 @@
+#features {
+    background: rgb(235, 235, 235);
+}
+
+
+.features {
+    padding: 2.6875rem 1.5rem;
+
+    &__head {
+        text-align: center;
+
+        h2,
+        p {
+            color: $darkViolet;
+        }
+
+        h2 {
+            margin-bottom: 1.75rem;
+            font-size: 1.875rem;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+    }
+
+    &__grid {}
+
+    &__card {
+        margin-top: 4rem;
+        background: repeating-linear-gradient(rgb(235, 235, 235), rgb(235, 235, 235) 20.9%, white 21.1%, white 100%);
+        padding: 2.0625rem;
+        border-radius: 10px;
+    }
+
+    &__icon {
+        margin: auto;
+        width: 80px;
+        border-radius: 50%;
+        padding: 1rem;
+        text-align: center;
+        background: $darkViolet;
+
+
+
+    }
+
+    &__text {
+        text-align: center;
+        margin-top: 2.4375rem;
+
+        h3 {
+            color: $darkViolet;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: $gray;
+        }
+    }
+}
