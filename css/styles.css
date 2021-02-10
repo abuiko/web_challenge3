@@ -548,4 +548,55 @@ a {
   line-height: 1.7;
   color: #bfbfbf;
 }
+
+#contact {
+  background: #3b3054;
+  background-image: url("/images/bg-boost-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.contact {
+  padding: 5.875rem 2.1125rem;
+}
+
+.contact h2 {
+  font-size: 1.59rem;
+  text-align: center;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.contact__button {
+  display: block;
+  padding: 1rem 1.5625rem;
+  background: #2acfcf;
+  border-radius: 30px;
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.contact__button:hover {
+  opacity: 0.75;
+}
+
+.contact__button a {
+  color: white;
+  font-weight: 700;
+}
+
+.contact__button a:hover {
+  color: white;
+}
+
+@media (min-width: 64em) {
+  .contact__button {
+    margin: 0;
+    width: 40%;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
