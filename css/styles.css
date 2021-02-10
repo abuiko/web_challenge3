@@ -629,6 +629,20 @@ a {
   padding-bottom: 2.875rem;
 }
 
+@media (min-width: 64em) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .footer__logo h2 {
   margin: 0;
   color: white;
@@ -636,12 +650,31 @@ a {
   font-size: 2.3rem;
 }
 
+@media (min-width: 64em) {
+  .footer__logo h2 {
+    height: 150px;
+  }
+}
+
 .footer__features, .footer__resources, .footer__company {
   margin-bottom: 3rem;
 }
 
+@media (min-width: 64em) {
+  .footer__features, .footer__resources, .footer__company {
+    text-align: left;
+    height: 150px;
+  }
+}
+
 .footer__features a, .footer__resources a, .footer__company a {
   color: white;
+  -webkit-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
+}
+
+.footer__features a:hover, .footer__resources a:hover, .footer__company a:hover {
+  color: #2acfcf;
 }
 
 .footer__features .bold,
@@ -657,12 +690,37 @@ a {
   font-size: 1.3rem;
 }
 
+.footer__features .bold a:hover,
+.footer__resources .bold a:hover,
+.footer__company .bold a:hover {
+  color: white;
+}
+
+@media (min-width: 64em) {
+  .footer__icons {
+    height: 150px;
+  }
+}
+
 .footer__icons span {
   color: white;
   font-size: 2rem;
+  -webkit-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
+}
+
+@media (min-width: 64em) {
+  .footer__icons span {
+    font-size: 1.5rem;
+  }
 }
 
 .footer__icons span:not(:last-child) {
   margin-right: 2rem;
+}
+
+.footer__icons span:hover {
+  color: #2acfcf;
+  cursor: pointer;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -15,6 +15,8 @@
     padding: 5.875rem 2.1125rem;
 
 
+
+
     h2 {
         font-size: 1.59rem;
         text-align: center;
@@ -72,6 +74,12 @@
     padding-top: 2.875rem;
     padding-bottom: 2.875rem;
 
+    @include breakpoints-up(large) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
 
     &__logo {
         h2 {
@@ -79,6 +87,11 @@
             color: white;
             margin-bottom: 2.875rem;
             font-size: 2.3rem;
+
+            @include breakpoints-up(large) {
+
+                height: 150px;
+            }
 
         }
     }
@@ -88,10 +101,20 @@
     &__company {
         margin-bottom: 3rem;
 
+        @include breakpoints-up(large) {
+            text-align: left;
+            height: 150px;
+        }
+
 
 
         a {
             color: white;
+            transition: color 300ms ease-in-out;
+        }
+
+        a:hover {
+            color: $cyan;
         }
     }
 
@@ -104,22 +127,39 @@
         a {
             font-weight: bold;
             font-size: 1.3rem;
+        }
 
-
+        a:hover {
+            color: white;
         }
     }
 
 
 
     &__icons {
+        @include breakpoints-up(large) {
+            height: 150px;
+        }
+
         span {
             color: white;
             font-size: 2rem;
+            transition: color 300ms ease-in-out;
+
+            @include breakpoints-up(large) {
+
+                font-size: 1.5rem;
+            }
 
             &:not(:last-child) {
                 margin-right: 2rem;
             }
 
+        }
+
+        span:hover {
+            color: $cyan;
+            cursor: pointer;
         }
 
 
