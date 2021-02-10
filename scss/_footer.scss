@@ -61,3 +61,67 @@
     }
 
 }
+
+// footer
+#footer {
+    background: $veryDarkBlue;
+}
+
+.footer {
+    text-align: center;
+    padding-top: 2.875rem;
+    padding-bottom: 2.875rem;
+
+
+    &__logo {
+        h2 {
+            margin: 0;
+            color: white;
+            margin-bottom: 2.875rem;
+            font-size: 2.3rem;
+
+        }
+    }
+
+    &__features,
+    &__resources,
+    &__company {
+        margin-bottom: 3rem;
+
+
+
+        a {
+            color: white;
+        }
+    }
+
+    &__features .bold,
+    &__resources .bold,
+    &__company .bold {
+        margin-bottom: 1.6rem;
+
+
+        a {
+            font-weight: bold;
+            font-size: 1.3rem;
+
+
+        }
+    }
+
+
+
+    &__icons {
+        span {
+            color: white;
+            font-size: 2rem;
+
+            &:not(:last-child) {
+                margin-right: 2rem;
+            }
+
+        }
+
+
+    }
+}

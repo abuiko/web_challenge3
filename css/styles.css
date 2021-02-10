@@ -19,10 +19,12 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 1.125rem;
   line-height: 1.3;
+  overflow-x: none;
 }
 
 ul {
-  list-style: none;
+  padding: 0;
+  list-style-type: none;
 }
 
 a {
@@ -615,5 +617,52 @@ a {
   .contact__button {
     width: 20%;
   }
+}
+
+#footer {
+  background: #35323e;
+}
+
+.footer {
+  text-align: center;
+  padding-top: 2.875rem;
+  padding-bottom: 2.875rem;
+}
+
+.footer__logo h2 {
+  margin: 0;
+  color: white;
+  margin-bottom: 2.875rem;
+  font-size: 2.3rem;
+}
+
+.footer__features, .footer__resources, .footer__company {
+  margin-bottom: 3rem;
+}
+
+.footer__features a, .footer__resources a, .footer__company a {
+  color: white;
+}
+
+.footer__features .bold,
+.footer__resources .bold,
+.footer__company .bold {
+  margin-bottom: 1.6rem;
+}
+
+.footer__features .bold a,
+.footer__resources .bold a,
+.footer__company .bold a {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.footer__icons span {
+  color: white;
+  font-size: 2rem;
+}
+
+.footer__icons span:not(:last-child) {
+  margin-right: 2rem;
 }
 /*# sourceMappingURL=styles.css.map */
